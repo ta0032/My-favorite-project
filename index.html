@@ -46,7 +46,7 @@
         height: 75px;
         justify-content: left;
         gap: 20px;
-        }
+      }
 
       .number_up {
         margin-top: 30px;
@@ -63,8 +63,10 @@
         text-align: left;
       }
 
+      .h_band,
       .profession,
-      .number_up {
+      .number_up, 
+      .place {
         color: rgb(156, 172, 187);
       }
 
@@ -73,11 +75,50 @@
         height: 15px;
       }
 
-      ul {
+      .years,
+      .place,
+      .work_body {
         margin: 0px;
       }
 
-      .block {
+      .info {
+        display: grid;
+        
+        grid-template-columns: 500px auto;
+        grid-auto-rows: auto;
+        grid-auto-flow: column;
+      }
+
+      .left_block, .right_block {
+        margin: 20px;
+      }
+
+      .block_head {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        height: 20px;
+      }
+
+      .position_date {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5%;
+        margin-bottom: 5px;
+      }
+
+      .position_body {
+        width: 240px;
+        margin: 0%;
+      }
+
+      .place {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+
+      .h_band{
+        margin-top: 25px;
+        margin-bottom: 25px;
       }
     </style>
   </head>
@@ -110,161 +151,144 @@
       </div>
     </div>
     <div class="info">
-      <div class="block">
-        <h2>Опыт работы</h2>
-        <div>
-          <table>
-            <tr>
-              <td><h4>Системный администратор офиса</h4></td>
-              <td><h4>июл. 2022 - сент. 2022</h4></td>
-            </tr>
-          </table>
+      <div class="left_block">
+      
+        <div class="block">
+          <h2 class="block_head">Опыт работы</h2>
+          <div>
+            <div class="position_date">
+              <h4 class="position_body">Системный администратор офиса</h4>
+              <h4 class="years">июл. 2022 - сент. 2022</h4>
+            </div>
 
-          <h5>A2, Ростов-на-Дону</h5>
-
-          <p>
-            Удаленная настройка и тестирование ПО(специализированные боты) через
-            AnyDesk. Настройка удаленных серверов на Windows. Техническая
-            поддержка осуществления международных транзакций.
-          </p>
-          <ul>
-            <li>Количество серверов увеличилось с 7 до 25</li>
-            <li>Время настройки бота сократилось с 45 до 15 мин.</li>
-            <li>Оборот по международным транзакциям увеличился на 17%</li>
-          </ul>
+            <h4 class="place">A2, Ростов-на-Дону</h4>
+  
+            <p class="work_body">
+              Удаленная настройка и тестирование ПО(специализированные боты) через
+              AnyDesk. Настройка удаленных серверов на Windows. Техническая
+              поддержка осуществления международных транзакций.
+            </p>
+            <ul class="work_body">
+              <li>Количество серверов увеличилось с 7 до 25</li>
+              <li>Время настройки бота сократилось с 45 до 15 мин.</li>
+              <li>Оборот по международным транзакциям увеличился на 17%</li>
+            </ul>
+          </div>
+          <div>
+           <div class="position_date">
+              <h4 class="position_body">QA Engineer</h4>
+              <h4 class="years">окт. 2021 - июн. 2022</h4>
+           </div>
+  
+            <h4 class="place">Opticus, Ростов-на-Дону</h4>
+  
+            <p class="work_body">
+              Функциональное тестирование. Обработка зарегистрированных файлов
+              JSON. Проверка, редактирование и внесение изменений, в соответствии
+              с получаемой информацией от пользователей.
+            </p>
+            <ul class="work_body">
+              <li>База проверяемых JSON-объектов сократилась на 43%</li>
+              <li>Количество получаемых жалоб сократилось вдвое</li>
+            </ul>
+          </div>
+          <div>
+            <div class="position_date">
+                <h4 class="position_body">Ассистент руководителя</h4>
+                <h4 class="years">нояб. 2020 - авг. 2021</h4>
+            </div>
+  
+            <h4 class="place">ООО Строй Диджитал Сервис, Ростов-на-Дону</h4>
+  
+            <p class="work_body">
+              Заполнение и ведение таблиц Excel, Google-таблиц, составление
+              отчетов о работе.
+            </p>
+          </div>
+          <div>
+            <div class="position_date">
+                  <h4 class="position_body">Специалист технической службы поддержки пользователей</h4>
+                <h4 class="years">фев. 2017 - июн. 2017</h4>
+            </div>
+  
+            <h4 class="place">ООО Кампэй, Ростов-на-Дону</h4>
+  
+            <p class="work_body">
+              Прием и обработка жалоб на горячей линии, составление сообщений об
+              ошибках системы и пользователей.
+            </p>
+          </div>
         </div>
-        <div>
-          <table>
-            <tr>
-              <td><h4>QA Engineer</h4></td>
-              <td><h4>окт. 2021 - июн. 2022</h4></td>
-            </tr>
-          </table>
-
-          <h5>Opticus, Ростов-на-Дону</h5>
-
-          <p>
-            Функциональное тестирование. Обработка зарегистрированных файлов
-            JSON. Проверка, редактирование и внесение изменений, в соответствии
-            с получаемой информацией от пользователей.
-          </p>
-          <ul>
-            <li>База проверяемых JSON-объектов сократилась на 43%</li>
-            <li>Количество получаемых жалоб сократилось вдвое</li>
-          </ul>
+        <hr class="h_band"/>
+        <div class="block">
+          <h2 class="block_head">Образование</h2>
+          <div class="position_date">
+              <h4 class="position_body">Экономическая безопасность</h4>
+              <h4 class="years">2014 - 2019</h4>
+          </div>
+  
+          <h4 class="place">Ростовский Государственный Университет Путей Сообщения</h4>
+  
+          <p class="work_body">Диплом с отличием</p>
         </div>
-        <div>
-          <table>
-            <tr>
-              <td><h4>Ассистент руководителя</h4></td>
-              <td><h4>нояб. 2020 - авг. 2021</h4></td>
-            </tr>
-          </table>
-
-          <h5>ООО Строй Диджитал Сервис, Ростов-на-Дону</h5>
-
-          <p>
-            Заполнение и ведение таблиц Excel, Google-таблиц, составление
-            отчетов о работе.
-          </p>
-        </div>
-        <div>
-          <table>
-            <tr>
-              <td>
-                <h4>Специалист технической службы поддержки пользователей</h4>
-              </td>
-              <td><h4>фев. 2017 - июн. 2017</h4></td>
-            </tr>
-          </table>
-
-          <h5>ООО Кампэй, Ростов-на-Дону</h5>
-
-          <p>
-            Прием и обработка жалоб на горячей линии, составление сообщений об
-            ошибках системы и пользователей.
-          </p>
+        <hr class="h_band"/>
+        <div class="block">
+          <h2 class="block_head">Курсы</h2>
+          <div class="position_date">
+            <h4 class="position_body">Udemy Bogdan Stashchuk</h4>
+            <h4 class="years">2021</h4>
+          </div>
+  
+          <p class="work_body">JavaScript - Полный Курс JavaScript Для Начинающих (Youtube)</p>
+  
+          <div class="position_date">
+              <h4 class="position_body">Artsiom Rusau QA Life</h4>
+              <h4 class="years">2021</h4>
+          </div>
+          <p class="work_body">Тестировщик с нуля (Youtube)</p>
         </div>
       </div>
-      <hr />
-      <div class="block">
-        <h2>Образование</h2>
-        <table>
-          <tr>
-            <td>
-              <h4>Экономическая безопасность</h4>
-            </td>
-            <td><h4>2014 - 2019</h4></td>
-          </tr>
-        </table>
-
-        <h4>Ростовский Государственный Университет Путей Сообщения</h4>
-
-        <p>Диплом с отличием</p>
-      </div>
-      <hr />
-      <div class="block">
-        <h2>Курсы</h2>
-        <table>
-          <tr>
-            <td>
-              <h4>Udemy Bogdan Stashchuk</h4>
-            </td>
-            <td><h4>2021</h4></td>
-          </tr>
-        </table>
-
-        <p>JavaScript - Полный Курс JavaScript Для Начинающих (Youtube)</p>
-
-        <table>
-          <tr>
-            <td>
-              <h4>Artsiom Rusau QA Life</h4>
-            </td>
-            <td><h4>2021</h4></td>
-          </tr>
-        </table>
-        <p>Тестировщик с нуля (Youtube)</p>
-      </div>
-      <hr />
-
-      <div class="block">
-        <h2>Контакты</h2>
-        <p>
-          <a href="https://www.linkedin.com/in/andrey-tarilov/">LinkedIn</a>
-        </p>
-        <p><a href="https://t.me/t_a_32">Telegram</a></p>
-        <p><a href="https://github.com/ta0032">GitHub</a></p>
-      </div>
-      <hr />
-      <div class="block">
-        <h2>Навыки</h2>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>Git</li>
-          <li>MySql</li>
-          <li>Atlassian Jira</li>
-          <li>Postman</li>
-        </ul>
-      </div>
-      <hr />
-      <div class="block">
-        <h2>Языки</h2>
-        <p>Русский</p>
-        <p>Английский</p>
-      </div>
-      <hr />
-      <div class="block">
-        <h2>Сертификаты</h2>
-        <h4>Stepik</h4>
-        <h4>2022</h4>
-        <p>
-          <a href="https://stepik.org/cert/1719028"
-            >Тестирование ПО: подготовка к сертификации ISTQB Foundation</a
-          >
-        </p>
+      <div class="right_block">
+        <div class="block">
+          <h2 class="block_head">Контакты</h2>
+            <p>
+              <a href="https://www.linkedin.com/in/andrey-tarilov/">LinkedIn</a>
+            </p>
+            <p><a href="https://t.me/t_a_32">Telegram</a></p>
+            <p><a href="https://github.com/ta0032">GitHub</a></p>
+          </div>
+          <hr class="h_band"/>
+          <div class="block">
+            <h2 class="block_head">Навыки</h2>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Git</li>
+              <li>MySql</li>
+              <li>Atlassian Jira</li>
+              <li>Postman</li>
+            </ul>
+          </div>
+          <hr class="h_band"/>
+          <div class="block">
+            <h2 class="block_head">Языки</h2>
+              <p>Русский</p>
+              <p>Английский(A2)</p>
+          </div>
+          <hr class="h_band"/>
+          <div class="block">
+            <h2 class="block_head">Сертификаты</h2>
+            <div class="position_date">
+              <h4 class="position_body">Stepik</h4>
+              <h4 class="years">2022</h4>
+            </div>
+              <p>
+                <a href="https://stepik.org/cert/1719028"
+                >Тестирование ПО: подготовка к сертификации ISTQB Foundation</a>
+              </p>
+          </div>
+        </div>
       </div>
     </div>
   </body>
