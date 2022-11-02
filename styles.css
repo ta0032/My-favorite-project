@@ -1,11 +1,30 @@
 body {
   margin: auto;
-  max-width: 800px;
+  width: 800px;
   font-family: "Noto Sans", sans-serif;
   font-size: 14px;
 }
 
+@media (max-width: 576px) {
+  body {
+    margin: auto;
+    width: 100%;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 800px) {
+  body {
+    margin: auto;
+    width: auto;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 14px;
+  }
+}
+
 .upping {
+  height: 200px;
   display: flex;
   background-color: rgb(68, 90, 103);
   box-shadow: 8px 0px 20px rgba(0, 0, 0, 0.25);
@@ -17,6 +36,12 @@ body {
   margin-top: 25px;
 }
 
+@media (max-width: 576px) {
+  .naming {
+    margin-top: 2%;
+  }
+}
+
 .profession {
   font-size: 20px;
   padding: 0%;
@@ -24,7 +49,7 @@ body {
 }
 
 a {
-  color: dark;
+  color: darkgreen;
   text-decoration: none;
 }
 
@@ -38,14 +63,50 @@ a:active {
 
 .numbers_up {
   display: flex;
-  width: 400px;
-  height: 75px;
-  justify-content: left;
+  height: 85px;
+  margin: auto;
+  align-items: center;
   gap: 20px;
 }
 
-.number_up {
-  margin-top: 30px;
+@media (max-width: 576px) {
+  .numbers_up {
+    width: auto;
+    height: auto;
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 0;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+  .numbers_up {
+    width: auto;
+    height: 85px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .number_up {
+    width: 100%;
+    height: 100%%;
+    margin: 5px 10px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+  .number_up {
+    width: auto;
+    height: 100%%;
+    margin: 5px 10px;
+  }
 }
 
 .avatar {
@@ -56,7 +117,12 @@ a:active {
 .head {
   box-sizing: border-box;
   padding-left: 30px;
-  text-align: left;
+}
+
+@media (max-width: 576px) {
+  .head {
+    padding-left: 10px;
+  }
 }
 
 hr,
@@ -80,6 +146,7 @@ hr,
 .list {
   padding-left: 5%;
   padding-top: 10px;
+  list-style: disc;
 }
 
 .info {
@@ -87,6 +154,30 @@ hr,
   grid-template-columns: 60% auto;
   grid-auto-rows: auto;
   grid-auto-flow: column;
+}
+
+@media (max-width: 576px) {
+  .info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .info > .right_block {
+    width: 100%;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+  .info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .info > .right_block {
+    width: 100%;
+  }
 }
 
 .left_block,
