@@ -38,7 +38,8 @@ body {
 
 @media (max-width: 576px) {
   .naming {
-    margin-top: 2%;
+    font-size: 35px;
+    margin-top: 4%;
   }
 }
 
@@ -121,7 +122,8 @@ a:active {
 
 @media (max-width: 576px) {
   .head {
-    padding-left: 10px;
+    box-sizing: border-box;
+    padding-left: 25px;
   }
 }
 
