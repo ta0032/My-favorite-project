@@ -128,6 +128,7 @@ a:active {
 }
 
 hr,
+.downloads_button,
 .profession,
 .number_up,
 .place {
@@ -151,11 +152,26 @@ hr,
   list-style: disc;
 }
 
+.downloads {
+  margin-top: 10px;
+  margin-right: 15px;
+  display: flex;
+  justify-content: end;
+  gap: 2%;
+}
+
+.downloads_button {
+  background-color: rgb(68, 90, 103);
+
+  border: none;
+}
+
 .info {
   display: grid;
   grid-template-columns: 60% auto;
   grid-auto-rows: auto;
   grid-auto-flow: column;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 576px) {
@@ -184,7 +200,7 @@ hr,
 
 .left_block,
 .right_block {
-  margin: 20px;
+  margin: 0px 20px;
 }
 
 .block_head {
